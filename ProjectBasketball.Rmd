@@ -5,26 +5,15 @@ date: "3/28/2017"
 output: html_document
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+```{r setup}
+library(vioplot)
+library(readxl)
+XX <- read_excel("~/Downloads/2012RevisedData.xlsx")
+x1 <- XX$FGA
+X2013 <- read_excel("~/Downloads/2013RevisedData.xlsx")
+x2 <- X2013$FGA
+X2014 <- read_excel("~/Downloads/2014RevisedData.xlsx")
+x3 <- X2014$FGA
+vioplot (x1, x2, x3, names=c ("11/12", "12/13", "13/14"))
 ```
 
-## R Markdown
-
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
-
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
-
-```{r cars}
-summary(cars)
-```
-
-## Including Plots
-
-You can also embed plots, for example:
-
-```{r pressure, echo=FALSE}
-plot(pressure)
-```
-
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
