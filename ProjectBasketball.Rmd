@@ -14,6 +14,12 @@ X2013 <- read_excel("~/Downloads/2013RevisedData.xlsx")
 x2 <- X2013$FGA
 X2014 <- read_excel("~/Downloads/2014RevisedData.xlsx")
 x3 <- X2014$FGA
-vioplot (x1, x2, x3, names=c ("11/12", "12/13", "13/14"))
+X2015 <- read_excel("~/Downloads/2015RevisedData.xlsx")
+x4 <- X2015$FGA
+X2016 <- read_excel("~/Downloads/2016RevisedData.xlsx")
+x5 <- X2016$FGA
+X2017 <- read_excel("~/Downloads/2017RevisedData.xlsx")
+x6 <- X2017$FGA
+vioplot (x1, x2, x3, x4, x5, x6,  names=c ("11/12", "12/13", "13/14", "14/15", "15/16", "16/17"))
 ```
 
