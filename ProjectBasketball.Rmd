@@ -21,5 +21,20 @@ x5 <- X2016$FGA
 X2017 <- read_excel("~/Downloads/2017RevisedData.xlsx")
 x6 <- X2017$FGA
 vioplot (x1, x2, x3, x4, x5, x6,  names=c ("11/12", "12/13", "13/14", "14/15", "15/16", "16/17"))
+library(vioplot)
+library(readxl)
+XX <- read_excel("~/Downloads/2012RevisedData.xlsx")
+Y1 <- XX$PPG
+X2013 <- read_excel("~/Downloads/2013RevisedData.xlsx")
+Y2 <- X2013$PPG
+X2014 <- read_excel("~/Downloads/2014RevisedData.xlsx")
+Y3 <- X2014$PPG
+X2015 <- read_excel("~/Downloads/2015RevisedData.xlsx")
+Y4 <- X2015$PPG
+X2016 <- read_excel("~/Downloads/2016RevisedData.xlsx")
+Y5 <- X2016$PPG
+X2017 <- read_excel("~/Downloads/2017RevisedData.xlsx")
+Y6 <- X2017$PPG
+vioplot (Y1, Y2, Y3, Y4, Y5, Y6,  names=c ("11/12", "12/13", "13/14", "14/15", "15/16", "16/17"))
 ```
 
